@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Hadir Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Daftar Hadir Mahasiswa Ilmu computer Kelas sore</h1>
+      <div class="form-group">
+        <input type="text" id="nim" placeholder="Masukkan NIM" />
+        <input type="text" id="name" placeholder="Masukkan Nama Mahasiswa" />
+        <input type="text" id="faculty" placeholder="Masukkan Fakultas" />
+        <input type="text" id="program" placeholder="Masukkan Program Studi" />
+        <button id="addButton">Tambah</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>NIM</th>
+            <th>Nama Mahasiswa</th>
+            <th>Fakultas</th>
+            <th>Program Studi</th>
+            <th>Hapus Data</th>
+            <!-- Label "Aksi" diubah menjadi lebih jelas -->
+          </tr>
+        </thead>
+
+        <tbody id="attendanceList"></tbody>
+      </table>
+      <button id="resetButton" class="reset-btn">Reset Daftar</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
